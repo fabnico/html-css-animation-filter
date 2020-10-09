@@ -100,13 +100,22 @@
    transform: scale(1.5);
 }
 
-
 .ex-10-icon {
     font-size: 60px;
+    animation-name: my_rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
 }
+
+@keyframes my_rotate{
+   0% {transform: rotate(360deg);}
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
